@@ -1,0 +1,70 @@
+@font-face {
+    font-family: minecraft;
+    src: url("fontes/Minecraft.ttf");
+}
+
+@font-face {
+    font-family: tituloJogo;
+    src: url("fontes/Minecrafter-MA3Dw.ttf");
+}
+
+p{
+    font-family: tituloJogo;
+    font-size: 5em;
+    color:rgb(255, 255, 255);
+    position:relative;
+    top: 1%;
+    margin:0;
+    bottom: 7vh;
+    text-shadow: 1px 3px black;
+}
+
+body{
+    background-image: url("outras_imagens/Captura\ de\ tela\ 2025-10-29\ 214749.png");
+    height:100vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}   
+
+.menu{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+button:visited, button{
+    width:100%;
+    color:aliceblue;    
+    text-decoration: none;
+    font-family: minecraft;
+}
+
+button{
+    font-size: 1.7em;
+    width: 40vw;
+    font-weight: lighter;
+    height: 7vh;
+    background-image: url("outras_imagens/bgbtn.png");
+    background-size: 140%;
+    image-rendering: pixelated;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: inset 3px 3px 0 0px rgb(165, 164, 164), 
+    inset 0 -8px 8px -4px rgb(79, 79, 79);
+    letter-spacing: 2px;
+    text-align:center;
+    margin:auto;
+    margin-bottom: 9px;
+    text-shadow: 1px 3px black;
+    cursor: pointer
+}
+
+button:hover{
+    background-image: url("outras_imagens/Designer.png");
+    color: yellow;
+}

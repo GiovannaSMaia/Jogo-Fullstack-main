@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="jogo.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="escolherJogo" class="menuJogo">
+        <div id="coluna1"> 
+            <h3> Escolha a sua skin</h3>
+            <div id="escolherSkin">
+                <div class="imagens">
+                    <button class="escolher" id="barata_Padrao">
+                        <img src="skins/iconPadrao.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="barata_Radioativa">
+                        <img src="skins/iconRadioativa.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="barata_Cookie">
+                        <img src="skins/iconCookie.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="barata_Brasil">
+                        <img src="skins/iconBrasil.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="barata_Minecraft">
+                        <img src="skins/iconMinecraft.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="barata_Colorida">
+                        <img src="skins/iconColorida.png" alt="barata">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="coluna2">
+            <h3> Escolha o seu fundo</h3>
+            <div id="escolherFundo">
+                <div class="imagens">
+                    <button class="escolher" id="fundo-cozinha">
+                        <img src="fundos/cozinha1.jpg" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="fundo-corredor">
+                        <img src="fundos/corredor.png" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="fundo-mato">
+                        <img src="fundos/mato.jpg" alt="barata">
+                    </button>
+
+                    <button class="escolher" id="fundo-esgoto1">
+                        <img src="fundos/esgoto1.jpg" alt="barata">
+                    </button>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <button id="voltar" onclick="window.location='menu.html'">Voltar ao menu</a>
+    </button>
+
+    <!-- CANVAS DO JOGO-->
+    <div>
+        <canvas id="joguinho"></canvas>
+    </div>
+    <div id="botoes" class="menuJogo">
+        <button id="botao_jogar">PLAY</button>
+        <button id="tutorial">Como jogar</button>
+    </div>
+    <div id="sobrepor"> 
+
+        <div id="comoJogar">
+            <div id="conteudo">
+                <div id="tutorialVida">
+                    <h3 id="tituloTutorial"> VIDAS </h3>
+                    <p> Pegue os corações para preencher as vidas da sua barata!</p>
+                    <div class="imagensTutorial">
+                        <span><img src="coracao.png" alt="coração pixelado"></span>
+                        <span><img src="coracao.png" alt="coração pixelado"></span>
+                        <span><img src="coracao.png" alt="coração pixelado"></span> </div>
+                    <p> OBS: Máximo de 3 vidas. Cuidado!</p>
+                </div>
+                <div id="tutorialBotoes">
+                    <h3 id="tituloTutorial"> COMANDOS </h3>
+                    <p>Aperte as setas do seu teclado para mexer a barata para o lado esquerdo e direito</p>
+                    <div id="setas">
+                        <div id="Lseta">
+                            <img src="outras_imagens/seta_esquerda.png" alt="Seta esquerda">
+                            <p>Esquerda</p>
+                        </div>
+                        <div id="Rseta"> 
+                           <img src="outras_imagens/seta_direita.png" alt="Seta direita">
+                           <p>Direita</p>
+                        </div>
+                    </div>
+                    
+                    <p> Desvie rapidamente dos objetos para não perder suas vidas!
+                        O jogo aumenta a velocidade com o tempo, então fique atento!
+                        Para ganhar, sobreviva as 5 fases, a mudança de fundo indicará a passagem das fases!
+                    </p>
+                </div>
+            </div>
+    </div>
+    <button id="fecharTutorial">X</button>
+    <!-- MENU DE ESCOLHER FUNDO E SKIN -->
+
+    </div>
+    
+    <script src="jogo.js"></script>
+   
+</body>
+</html>

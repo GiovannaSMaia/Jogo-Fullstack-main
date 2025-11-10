@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url(fontes/Minecraft.ttf);
+}
+
+body{
+    font-family: 'minecraft';
+    background-image: url("outras_imagens/terra.jpg");
+    background-size: cover;
+    height: 100vh;  
+    width:100vw;
+    overflow: hidden    
+}
+
+canvas{
+    position: absolute;
+    left: 50%;
+    bottom:15%;
+    transform: translateX(-50%);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+#escolherJogo{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top:65px;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 50px;
+    width: 100%;
+    align-items: stretch;
+    letter-spacing: 2px;
+
+}
+
+#escolherSkin, #escolherFundo{
+    background-size: 200%;
+    image-rendering: pixelated;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    min-height: 200px;
+    border: 30px solid transparent;
+    border-radius: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+   
+
+#coluna1,#coluna2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+}
+
+.imagens{
+    
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 25px;
+    width:100%;
+    max-height: 100%;
+    background-image: url("outras_imagens/bgbtn.png");
+    background-size: 200%;
+    image-rendering: pixelated;
+    box-sizing: border-box; /* border box faz com que a largura e a altura inclua o tamanho do padding e da borda*/
+    flex:1; /* permite q itens crescam ou diminuam*/
+    border: 3px solid black;
+    box-shadow: inset 5px 5px 0 0px rgb(165, 164, 164), 
+    inset 0 -8px 8px -4px rgb(79, 79, 79);
+}
+
+
+img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.imagens button{
+    max-width: 25%;
+    max-height: 45%;
+    aspect-ratio: 1; /* formato quadrado */
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.2s ease; 
+    border: solid 3px black;
+    box-shadow: 0px 0px 7px rgb(44, 36, 36);
+
+}
+
+.imagens button:hover{
+    transform: scale(1.25);
+}
+
+button{
+    cursor: pointer;
+}
+
+h3{
+    text-align:center;
+    font-size: 1.5em;
+    width:100%;
+    margin:auto;
+    margin-bottom: 9px;
+    text-shadow: 1px 3px black;
+    font-weight: normal;
+}
+
+
+#botao_jogar, #botaoVoltarJogo,#tutorial, #voltar{
+    font-family: 'minecraft';
+    color:rgb(215, 215, 215);
+    margin: auto;
+    text-align:center;
+    text-shadow: 1px 3px black;
+    cursor: pointer;
+}
+
+#botaoVoltarJogo, #tutorial, #voltar{
+    font-weight: lighter;
+    font-size: 1.7em;
+    border: 3px solid black;width: 40vw;
+    height: 7vh;
+    background-image: url("outras_imagens/bgbtn.png");
+    background-size: 140%;
+    image-rendering: pixelated;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 0 0px rgb(165, 164, 164), 
+    inset 0 -8px 8px -4px rgb(79, 79, 79);
+    letter-spacing: 2px;
+}
+
+#botaoVoltarJogo{
+    height: 10vh;
+    width: 20vw;
+}
+
+#tutorial{
+    width: 40vw;
+}
+
+#botao_jogar{
+    font-style: italic;
+    font-size: 60px;
+    padding: 20px;
+    display:block;
+    font-weight: 1000;
+    border:none;
+    background: none;
+}
+
+#voltar{
+    position: relative;
+    top: 40%;
+    width: 40vw;
+    height: auto;
+    min-height: 7vh;
+    margin-bottom: 20px;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao_jogar:hover{
+    transform: scale(1.20);
+    transition: transform 0.2s ease
+}
+
+
+#voltar:hover, #botaoVoltarJogo:hover, #tutorial:hover{
+    background-image: url("outras_imagens/Designer.png");
+    color: yellow;
+}
+
+#voltar:visited,#botaoVoltarJogo:visited, #tutorial:visited{
+    color:aliceblue;    
+    text-decoration: none;
+    font-family: minecraft;
+}
+
+#botoes{
+    display:  flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobrepor{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.488);
+    z-index: 1;
+    position:absolute;
+    top:0;
+    right: 0;
+    left: 0;
+}
+
+#fecharTutorial{
+    font-family: minecraft;
+    font-size: 3.5em;
+    position:absolute;
+    top: 5%;
+    right: 10%;
+    width: 5%;
+    height:10%;
+    background: none;
+    color: rgb(165, 164, 164);
+    border: none
+}
+
+#comoJogar{
+    margin:auto;
+    position: relative;
+    top: 8%;
+    text-shadow: 1px 3px black;
+    font-weight: normal;
+    width: 60%;
+    height:70%;
+    color:rgb(211, 211, 210);
+    background-image: url("outras_imagens/bgbtn.png");
+    image-rendering: pixelated;
+    background-size: 140%;
+    padding: 2%;
+    border: 15px solid rgb(191, 191, 191)
+}
+
+#comoJogar h3{
+    color:rgb(243, 243, 38)
+}
+
+#conteudo{
+    font-size: 1.3em;
+    display:flex;
+    justify-content: space-evenly;
+    gap:30px;
+    align-items: baseline;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+#conteudo img{
+    width: 30%;
+}
+
+#setas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Lseta, #Rseta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-top: 0;
+}
+
+#Lseta img, #Rseta img{
+    width:80%;
+    height: 80%;
+    margin:0;
+}
+
+#tutorialVida, #tutorialBotoes{
+    flex-wrap: wrap;
+    width: 40%;
+}
+
